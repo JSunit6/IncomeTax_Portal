@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Income tax Login</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<link href="bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="bootstrap-theme.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="bootstrap-theme.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="valcss.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+a:link {color:#660000;}
+a:visited {color:orangered;}
+a:hover {color:#000033;}
+a:active {color:white;}
+
+</style>
+<script>
+    
+    function isBlank(s)
+{
+    var len;
+    len=s.length;
+    for(i=0;i<=len;i++)
+        {
+            if(s.charAt(i)!="")
+                {
+                    return false;
+                }
+        }
+        return true;
+}
+function validateName()
+{
+    var str=document.loginform.txtuser.value;
+    if(isBlank(str))
+        {
+            document.getElementById("valusr").innerHTML="CANNOT BE BLANK";
+            document.loginform.txtuser.value="";
+            return false;
+        }
+        if(isBlank(str)==false)
+            {
+                document.getElementById("valusr").innerHTML="";
+            }
+}
+function validatePassword()
+{
+    var pass=document.loginform.txtpass.value;
+    if(isBlank(pass))
+        {
+         document.getElementById("valpass").innerHTML="CANNOT BE BLANK";
+            document.loginform.txtpass.value="";
+            return false;
+        }
+        if(isBlank(pass)==false)
+            {
+                document.getElementById("valpass").innerHTML="";
+            }
+           
+}
+
+</script>
+
+</head>
+
+<body class="backimg">
+<div id="header">
+	<table border="0">
+            <tr><td><img alt="income tax department" src="images/IncomeTaxLogo1.jpg" width="1004" height="138" align="left" /></td></tr>
+     </table>
+	 </div>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <center>
+
+             <div class="bgimg">
+             <form name="loginform" method="post" action="loginserv">
+                 
+                    <table>
+                        <tr><td><font color="930D03" style="font-family:sans-serif"><b>USERNAME:</b></font></td><td><input type="text" name="txtuser" onblur="validateName()" placeholder="USERNAME"></td><td id="valusr"></td>
+                        <tr><td><font color="930D03" style="font-family:sans-serif"><b>PASSWORD:</b></font></td><td><input type="password" name="txtpass" onchange="return enable()" onblur="validatePassword()" placeholder="PASSWORD"></td><td id="valpass"></td>
+                     <tr><td><input type="submit" name="btnlogin "value="Login"></td><td> <input type="reset" value="Reset"></td>
+
+                     
+                 
+    <tr><td><a href="http://localhost:8080/project/chngpass.html">Change Password?</a></td></tr>
+    <tr><td><a href="forgotpass.html">Forgot Password?</a></td></tr>
+    <tr><td>New User?<a href="register.html">Register</a></td></tr>
+    <tr><td><a href="deregister.html">Deregister?</a></td></tr>
+             </table>
+             </form>
+             </div>
+         </center>
+          <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br><br>
+         <br>
+         <br><br>
+         <br>
+         <br>
+         <br><br>
+         <br>
+         <br><br>
+
+
+
+         <div id="footer">
+             <table border="0">
+                 <tr><td><p class="copyright">&copy;&nbsp;&nbsp;2014 All Rights Reserved &nbsp;&bull;&nbsp; Designed by <strong>Sunit P. Kajarekar</strong>.</p>
+	<p class="link"><a href="#">Privacy Policy</a>&nbsp;&#8226;&nbsp;<a href="#">Terms of Use</a></p>
+                     </td>
+                 </tr>
+                 </table>
+
+        </div>
+
+
+</body>
+</html>

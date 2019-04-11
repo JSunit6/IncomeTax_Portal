@@ -1,0 +1,145 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <title>Income tax Login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="valcss.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+a:link {color:#660000;}
+a:visited {color:orangered;}
+a:hover {color:#000033;}
+a:active {color:white;}
+</style>
+<script>
+function isBlank(s)
+{
+    var len;
+    len=s.length;
+    for(i=0;i<=len;i++)
+        {
+            if(s.charAt(i)!="")
+                {
+                    return false;
+                }
+        }
+        return true;
+}
+function validateName()
+{
+    var str=document.deregisterform.txtdeuser.value;
+    if(isBlank(str))
+        {
+            document.getElementById("valdeusr").innerHTML="CANNOT BE BLANK";
+            document.deregisterform.txtdeuser.value="";
+            return false;
+        }
+        if(isBlank(str)==false)
+            {
+                document.getElementById("valdeusr").innerHTML="";
+            }
+}
+function validatePassword()
+{
+    var pass=document.deregisterform.txtdepass.value;
+    if(isBlank(pass))
+        {
+         document.getElementById("valdepass").innerHTML="CANNOT BE BLANK";
+            document.deregisterform.txtdepass.value="";
+            return false;
+        }
+        if(isBlank(pass)==false)
+            {
+                document.getElementById("valdepass").innerHTML="";
+            }
+}
+function deregConf()
+    {
+        var con=confirm("ARE YOU SURE YOU WANT TO DEREGISTER?");
+       if(con==true)
+           {
+               document.deregisterform.action="deregister"
+           }
+        else
+            {
+                window.location.assign("http://localhost:8080/project/inclogin.html")
+            }
+    }
+  </script>
+
+  </head>
+<body class="backimg">
+<div id="header">
+	<table border="0">
+            <tr><td><img alt="income tax department" src="images/IncomeTaxLogo1.jpg" width="1004" height="138" align="left" /></td></tr>
+     </table>
+	 </div>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+         <br>
+	 <br>
+	 <br>
+	 <center>
+
+             <div class="bgimg">
+             <form name="deregisterform" method="post">
+
+                    <table>
+                <tr><td><font color="930D03" style="font-family:sans-serif"><b>USERNAME:</b></font></td><td><input type="text" name="txtdeuser" onblur="validateName()"></td><td id="devalusr"></td>
+                <tr><td><font color="930D03" style="font-family:sans-serif"><b>PASSWORD:</b></font></td><td><input type="password" name="txtdepass" onblur="validatePassword()"></td><td id="devalpass"></td>
+                <tr><td><input type="submit" value="Deregister" onclick="deregConf()"></td><td> <input type="reset" value="Reset"></td>
+                <tr><td><a href="forgotpass.html">Forgot Password?</a><br/></td></tr>
+                
+                </table>
+             </form>
+             </div>
+         </center>
+ <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br><br>
+         <br>
+         <br><br>
+         <br>
+         <br>
+         <br><br>
+         <br>
+         <br><br>
+<div class="downlinks">
+<table border=0 align="center">
+<tr>
+<td><a href="inclogin.html">LOGIN</a></td>&nbsp;<td>&nbsp;</td><td>&nbsp;</td><td><a href="chngpass.html">CHANGE PASSWORD</a></td><td>&nbsp;</td><td>&nbsp;</td><td><a href="forgotpass.html">FORGOT PASSWORD</a></td><td>&nbsp;</td><td>&nbsp;</td><td><a href="register.html">REGISTER</a></td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+</table>
+</div>
+
+
+         <div id="footer">
+             <table border="0">
+                 <tr><td><p class="copyright">&copy;&nbsp;&nbsp;2014 All Rights Reserved &nbsp;&bull;&nbsp; Designed by <strong>Sunit P. Kajarekar</strong>.</p>
+	<p class="link"><a href="#">Privacy Policy</a>&nbsp;&#8226;&nbsp;<a href="#">Terms of Use</a></p>
+                     </td>
+                 </tr>
+                 </table>
+
+        </div>
+
+
+         
+</body>
+
+</html>

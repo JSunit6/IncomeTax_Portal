@@ -1,0 +1,111 @@
+root { 
+    display: block;
+}
+#valusr
+{
+color: red;
+font-weight: bolder;
+}
+#valpass
+{
+color: red;
+font-weight: bolder;
+}
+#valans
+{
+ color: red;
+font-weight: bolder;
+}
+#valcpass
+{
+ color: red;
+font-weight: bolder;
+}
+#valseq
+{
+  color: red;
+font-weight: bolder;
+}
+#valGIS
+{
+  color: red;
+font-weight: bolder;
+}
+#valGPF
+{
+  color: red;
+font-weight: bolder;
+}
+#valId
+{
+  color: red;
+font-weight: bolder;
+}
+#valNSC
+{
+  color: red;
+font-weight: bolder;
+}
+#valPPF
+{
+  color: red;
+font-weight: bolder;
+}
+#valdesg
+{
+  color: red;
+font-weight: bolder;
+}
+#valfees
+{
+  color: red;
+font-weight: bolder;
+}
+#valpan
+{
+  color: red;
+font-weight: bolder;
+}
+#valprof
+{
+  color: red;
+font-weight: bolder;
+}
+#valsal
+{
+  color: red;
+font-weight: bolder;
+}
+#valtrav
+{
+  color: red;
+font-weight: bolder;
+}
+.backimg
+{
+    background: url(images/tax.png) no-repeat;
+    width:1024px;
+    height:768px ;
+}
+#olpass
+{
+ color: red;
+ font-weight: bolder;
+}
+#newpass
+{
+color: red;
+font-weight: bolder;
+}
+#devalpass
+{
+    color: red;
+font-weight: bolder;
+
+}
+#devalusr
+{
+    color: red;
+font-weight: bolder;
+
+}
